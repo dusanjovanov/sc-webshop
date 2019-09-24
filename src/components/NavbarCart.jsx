@@ -9,6 +9,11 @@ const NavbarCart = () => {
 
   return (
     <div className={classes.root}>
+      <div className={classes.cartText}>
+        <span role="img" aria-label="cart">
+          🛒
+        </span>
+      </div>
       <div className={classes.numOfItems}>{numOfItems}</div>
     </div>
   );
