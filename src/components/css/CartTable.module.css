@@ -1,0 +1,12 @@
+.totalRow td {
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
+.totalText {
+  font-weight: 600;
+}
+
+.totalPrice {
+  font-weight: 600;
+}
