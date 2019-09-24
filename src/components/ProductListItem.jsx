@@ -12,7 +12,7 @@ const ProductListItem = ({ product }) => {
         <img
           className={classes.image}
           src={product.imgUrl}
-          alt={`image of ${product.name}`}
+          alt={product.name}
         />
       </div>
       <div className={classes.title}>
