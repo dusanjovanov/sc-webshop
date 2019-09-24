@@ -1,6 +1,5 @@
 import React from "react";
 import CartTableRow from "./CartTableRow";
-import { arrayOfProducts as products } from "../data.json";
 import classes from "./css/CartTable.module.css";
 import { arrayOfProducts as products } from "../data.json";
 
@@ -25,7 +24,9 @@ const CartTable = ({ items }) => {
           <td></td>
           <td className={classes.totalText}>TOTAL:</td>
           <td></td>
-          <td className={classes.totalPrice}>&euro;10000</td>
+          <td className={classes.totalPrice}>
+            &euro;{Number(totalPrice).toFixed(2)}
+          </td>
         </tr>
       </tbody>
     </table>
