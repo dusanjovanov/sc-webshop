@@ -1,0 +1,52 @@
+.rowNumber {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.image {
+  width: 50px;
+}
+
+.name {
+  padding: 0 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quantity {
+  width: 125px;
+}
+
+.times {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.price {
+  color: #008000;
+}
+
+.equals {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.total {
+  color: #008000;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.deleteButton {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #ddd;
+}
