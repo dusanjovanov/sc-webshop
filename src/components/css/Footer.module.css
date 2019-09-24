@@ -1,0 +1,16 @@
+.root {
+  height: 200px;
+  background-color: #ddd;
+  display: flex;
+  padding: 20px;
+}
+
+.root ul {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.brand {
+  font-size: 1.5em;
+  margin-right: 30px;
+}
