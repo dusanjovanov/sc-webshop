@@ -25,7 +25,10 @@ const Product = ({ match }) => {
           <h1 className={classes.name}>{product.name}</h1>
           <div className={classes.description}>{product.description}</div>
           <div className={classes.priceAddToCart}>
+            <button
+              className={classes.addToCartButton + " button"}
               onClick={onClickAddToCart}
+            >
               <span role="img" aria-label="cart">
                 🛒
               </span>{" "}
