@@ -17,7 +17,7 @@ const ProductListItem = ({ product }) => {
       </div>
       <div className={classes.title}>
         <div className={classes.name}>{product.name}</div>{" "}
-        <div className={classes.price}>€{product.price}</div>
+        <div className={classes.price}>&euro;{Number(product.price).toFixed(2)}</div>
       </div>
     </Link>
   );

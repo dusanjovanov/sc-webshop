@@ -20,8 +20,15 @@ const Product = ({ match }) => {
           <h1 className={classes.name}>{product.name}</h1>
           <div className={classes.description}>{product.description}</div>
           <div className={classes.priceAddToCart}>
-            <button className={classes.addToCartButton}><span role="img" aria-label="cart">🛒</span> Add to cart</button>
-            <div className={classes.price}>€{product.price}</div>
+            <button className={classes.addToCartButton}>
+              <span role="img" aria-label="cart">
+                🛒
+              </span>{" "}
+              Add to cart
+            </button>
+            <div className={classes.price}>
+              &euro;{Number(product.price).toFixed(2)}
+            </div>
           </div>
         </div>
       </div>
