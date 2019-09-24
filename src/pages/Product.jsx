@@ -12,7 +12,7 @@ const Product = ({ match }) => {
   const onClickAddToCart = () => addItem(product);
 
   return (
-    <div className={classes.root}>
+    <div className="page">
       <div className={classes.productRoot}>
         <div className={classes.imageContainer}>
           <img

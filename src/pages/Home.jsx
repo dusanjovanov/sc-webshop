@@ -4,7 +4,7 @@ import ProductList from "../components/ProductList";
 
 const Home = () => {
   return (
-    <div className={classes.root}>
+    <div className="page">
       <ProductList />
     </div>
   );

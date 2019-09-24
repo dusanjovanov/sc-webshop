@@ -17,3 +17,11 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+.page {
+  min-height: calc(100vh - 52px);
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 52px;
+  padding-bottom: 30px;
+}

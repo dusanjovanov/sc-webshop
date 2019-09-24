@@ -6,7 +6,7 @@ import { CartContext } from "../context/CartContext.jsx";
 const Cart = () => {
   const { items } = useContext(CartContext);
   return (
-    <div className={classes.root}>
+    <div className="page">
       <h1 className={classes.title}>Your cart</h1>
       {items.length === 0 ? (
         <div>You don't have any products in your cart.</div>
