@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
 import classes from "./css/Navbar.module.css";
+import NavbarCart from "./NavbarCart";
 
 const Navbar = () => {
   return (
@@ -14,9 +15,9 @@ const Navbar = () => {
             All products
           </NavLink>
         </li>
-        <li className={`${classes.menuItem} ${classes.cart}`}>
+        <li className={classes.cart}>
           <NavLink to="/cart" activeClassName={classes.active}>
-            🛒
+            <NavbarCart />
           </NavLink>
         </li>
       </ul>
