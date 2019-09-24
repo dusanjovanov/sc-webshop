@@ -1,0 +1,29 @@
+.root {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.button {
+  height: 100%;
+  padding: 0 15px;
+  border: 0;
+  background-color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.quantity {
+  text-align: center;
+  flex-grow: 1;
+  min-width: 60px;
+}
