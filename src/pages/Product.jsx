@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { arrayOfProducts as products } from "../data.json";
 import classes from "./css/Product.module.css";
+import { CartContext } from "../context/CartContext";
 
 const Product = ({ match }) => {
+  const { addItem } = useContext(CartContext);
+
   const productName = match.params.name.replace(/-/g, " ");
   const product = products.find(p => p.name === productName);
+
+  const onClickAddToCart = () => addItem(product);
 
   return (
     <div className={classes.root}>
@@ -20,7 +25,7 @@ const Product = ({ match }) => {
           <h1 className={classes.name}>{product.name}</h1>
           <div className={classes.description}>{product.description}</div>
           <div className={classes.priceAddToCart}>
-            <button className={classes.addToCartButton}>
+              onClick={onClickAddToCart}
               <span role="img" aria-label="cart">
                 🛒
               </span>{" "}
