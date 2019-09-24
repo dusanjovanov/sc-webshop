@@ -47,6 +47,10 @@
   border-radius: 5px;
 }
 
+.deleteButton:focus {
+  outline: none;
+}
+
 .deleteButton:hover {
   background-color: #ddd;
 }

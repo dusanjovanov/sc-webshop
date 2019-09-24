@@ -44,6 +44,10 @@ a.active {
   margin-left: auto;
 }
 
+.cart:hover {
+  background-color: #ccc;
+}
+
 .cart a {
   color: #000;
   text-decoration: none;

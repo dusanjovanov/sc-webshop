@@ -5,4 +5,11 @@
 
 .title {
   margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.checkoutContainer {
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 20px;
 }
